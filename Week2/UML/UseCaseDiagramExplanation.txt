@@ -1,0 +1,3 @@
+The actor is the Customer who will interact with the system from outside the system boundary which is specified by the rectangle.
+There are three use cases or functionalities. They are Order, SpecialOrder and NormalOrder.
+SpecialOrder and NormalOrder are extended from Order use case. This means the Customer can have multiple orders which can be of the type SpecialOrder or NormalOrder.

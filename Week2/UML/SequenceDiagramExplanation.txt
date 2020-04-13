@@ -1,0 +1,6 @@
+There are 4 objects, Customer, Order and SpecialOrder or NormalOrder. 
+In the given sequence diagram the sequence is shown for SpecialOrder object.
+First the Customer object is initialized.
+It calls the sendOrder() function of the Customer class.
+After this, the confirm() method of Order class is called and then the dispatch() method of the SpecialOrder class is called since the Order is of type SpecialOrder. 
+The return calls specify that the respective function calls dispatch() and confirm() are completed and execution returns back to the Customer object.

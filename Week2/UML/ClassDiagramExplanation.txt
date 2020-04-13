@@ -1,0 +1,5 @@
+Customer and Order are the two main classes. 
+Customer class has two String variables and two methods and Order class has two variables, one Date type and one String type, and two methods.
+There is a one-to-many (1:n) relationship between Customer and Order. This means that a customer object can have multiple orders related to it.
+Class Order has two sub-classes, SpecialOrder and NormalOrder that inherit from it.
+SpecialOrder class has one additional method i.e. dispatch() and NormalOrder has two additional methods i.e. dispatch() and receive().
