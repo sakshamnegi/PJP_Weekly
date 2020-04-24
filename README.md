@@ -1,4 +1,4 @@
 # Weekly Assignments
 
-* Repo for PJP assignments *(week 2 and onwards)*
+* Repo for PJP assignments 
 * Weekly branches per assignment
