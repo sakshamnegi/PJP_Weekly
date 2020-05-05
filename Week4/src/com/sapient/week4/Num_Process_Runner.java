@@ -8,18 +8,10 @@ public class Num_Process_Runner {
 		
 		
 		HashMap<Character, Num_Process> map = new HashMap<Character, Num_Process>();
-		map.put('+', (int a, int b) -> {
-			return (a + b);
-		});
-		map.put('-', (int a, int b) -> {
-			return (a - b);
-		});
-		map.put('*', (int a, int b) -> {
-			return (a * b);
-		});
-		map.put('/', (int a, int b) -> {
-			return (a / b);
-		});
+		map.put('+', (int a, int b) -> (a + b));
+		map.put('-', (int a, int b) -> (a - b));
+		map.put('*', (int a, int b) -> (a * b));
+		map.put('/', (int a, int b) -> (a / b));
 
 		int x, y;
 		Character ch;
