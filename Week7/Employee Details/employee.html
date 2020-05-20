@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>Employee Details</title>
+</head>
+
+<body>
+    <script src="employee.js" defer></script>
+    <div class="jumbotron">
+        <h2>Employee Details</h2>
+    </div>
+
+    <div class="container">
+        <h3>Enter Details</h3>
+        <hr>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" >Name</span>
+            </div>
+            <input type="text" class="form-control" id="emp_name" aria-label="Default" aria-describedby="inputGroup-sizing-default" aria-required="true">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" >ID</span>
+            </div>
+            <input type="text" class="form-control" id="emp_id" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                aria-required="true">
+
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" >Department</span>
+            </div>
+            <input type="text" class="form-control" id="emp_department" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                aria-required="true">
+
+        </div>
+
+        
+        <button class="btn btn-primary" id="submit_employee" type="button">Submit</button>
+    </div>
+    <br>
+    <div class="container" id="success_alert" style="display: none;">
+        <div class="alert alert-success" role="alert" >
+            Details added successfully
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h3>Show Details</h3>
+        <hr>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">View All Details</span>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="button" id="show_all_details">Show All</button>
+            </div>
+                
+        </div>
+        <div class="alert alert-danger" role="alert" id="empty_alert" style="display: none;" >
+            No record found
+        </div>
+
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" >View Specific Details</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Enter Employee name to search"
+                aria-label="Recipient's username" aria-describedby="basic-addon2" id="employee_to_search">
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="button" id="show_specific_details">Search</button>
+            </div>
+        </div>
+
+        <table class="table" id="table" style="display: none;">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">ID</th>
+                <th scope="col">Department</th>
+              </tr>
+            </thead>
+            <tbody id="table_body">
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              
+            </tbody>
+          </table>
+
+         
+    </div>
+
+</body>
+
+</html>
